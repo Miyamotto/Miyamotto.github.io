@@ -75,16 +75,69 @@ nav button:hover{
 .userText{
     padding: 1rem;
 }
+
 .userText p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .heroImages{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    
     padding-top: 5rem;
+    grid-gap: 8rem;
+}
+.heroOne img{
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 900px){
+.heroTwo img{
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.heroThree img{
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.heroImages h1{
+    padding-top: 1rem;
+}
+.heroText{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 6rem;
+}
+.userAvatar{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.userAvatar img{
+    height: 5rem;
+}
+.userAvatar p{
+    color: rgb(96, 94, 94);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+footer p{
+    color: rgb(96, 94, 94);
+}
+
+
+@media screen and (max-width: 800px){
    .startingContent{
        display: grid;
        grid-template-columns: repeat(1, 1fr);
@@ -107,22 +160,67 @@ nav button:hover{
    .hamburgerMenu{
        display: block;
    }
-    
+   .heroImages{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+   }
+   .heroImages h2{
+       font-size: 1rem;
+   }
+   .heroImages p{
+       font-size: 1rem;
+   }
+    footer{
+        display: block;
+    }
 }
-@media screen and (min-width: 900px){
+@media screen and (max-width: 1050px){
+    .startingContent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 5rem;
+    }
+    .contentText h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .contentText p{
+     font-size: 1rem;
+ }
+    nav{
+        display: none;
+        
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    .heroImages{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width: 1050px){
     .startingContent{
         display: grid;
         grid-template-columns: 1fr 2fr;
         padding-top: 5rem;
         
     }
+    
     .hamburgerMenu{
         display: none;
     }
     nav{
         display: flex;
     }
-    
+    .heroImages{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
